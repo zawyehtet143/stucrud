@@ -79,13 +79,18 @@
         <tbody>
         
         <?php
+        $id=1;
         include('connect.php');
         $sqlSelect = "SELECT * FROM student";
         $result = mysqli_query($conn,$sqlSelect);
         while($data = mysqli_fetch_array($result)){
             ?>
             <tr>
-                <td><?php echo $data['id']; ?></td>
+                <td><?php echo 
+                
+                $id;
+                $id++;
+                ?></td>
                 <td><?php echo $data['firstname']; ?></td>
                 <td><?php echo $data['lastname']; ?></td>
                 <td><?php echo $data['age']; ?></td>

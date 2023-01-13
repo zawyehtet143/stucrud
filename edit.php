@@ -38,7 +38,7 @@
             </div>
 
             <div class="form-elemnt my-4">
-                <input type="text" class="form-control" name="dob" placeholder="Date of birth:" value="<?php echo $row["dob"]; ?>">
+                <input type="date" class="form-control" name="dob" placeholder="Date of birth:" value="<?php echo $row["dob"]; ?>">
             </div>
 
             <div class="form-elemnt my-4">

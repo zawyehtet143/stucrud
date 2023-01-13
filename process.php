@@ -33,7 +33,7 @@ if (isset($_POST["edit"])) {
     $phno = mysqli_real_escape_string($conn, $_POST["phno"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]); 
     $id = mysqli_real_escape_string($conn, $_POST["id"]);
-    $sqlUpdate = "UPDATE students SET firstname = '$firstname', lastname = '$lastname', age = '$age', dob = '$dob' , address = '$address' , township = '$township' , city = '$city' , phno = '$phno' , email = ' $email'  WHERE id='$id'"; 
+    $sqlUpdate = "UPDATE student SET firstname = '$firstname', lastname = '$lastname', age = '$age', dob = '$dob' , address = '$address' , township = '$township' , city = '$city' , phno = '$phno' , email = ' $email'  WHERE id='$id'"; 
     if(mysqli_query($conn,$sqlUpdate)){
         session_start();
         $_SESSION["update"] = "Student Updated Successfully!";
